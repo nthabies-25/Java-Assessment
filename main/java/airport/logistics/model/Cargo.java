@@ -1,11 +1,17 @@
 package airport.logistics.model;
 
 public class Cargo {
-    private String cargoType;
+
+    public enum CargoType {
+        FOOD,
+        MEDICAL,
+        FUEL
+    }
+    private CargoType cargoType;
     private double weight;
     private String priorityLevel;
 
-    public Cargo(String cargoType, double weight, String priorityLevel) {
+    public Cargo(CargoType cargoType, double weight, String priorityLevel) {
         if (weight <= 0) {
             throw new IllegalArgumentException();
         }
@@ -13,7 +19,7 @@ public class Cargo {
         this.cargoType = cargoType;
     }
 
-    public String cargoType() {
+    public CargoType cargoType() {
         return cargoType;
     }
 
@@ -33,7 +39,7 @@ public class Cargo {
         this.weight = weight;
     }
 
-    public void cargoType(String cargoType){
+    public void cargoType(CargoType cargoType){
         this.cargoType = cargoType;
 
     }

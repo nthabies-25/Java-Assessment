@@ -1,5 +1,3 @@
-package airport.logistics;
-
 import airport.logistics.enums.*;
 import airport.logistics.model.*;
 import org.junit.jupiter.api.Test;

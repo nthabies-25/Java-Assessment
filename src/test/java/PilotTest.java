@@ -1,5 +1,3 @@
-package airport.logistics.model;
-
 import airport.logistics.enums.PilotRank;
 import airport.logistics.model.Pilot;
 import org.junit.jupiter.api.Test;
